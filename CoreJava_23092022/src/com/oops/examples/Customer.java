@@ -1,19 +1,16 @@
 package com.oops.examples;
 
-public class Customer  {
+public class Customer extends Address  {
 	
 	
 	private String name;
 	private String age;
 	private String gender;
 	private Address address;
-	
-	public Customer() {
-		
-	}
-	
-	public Customer(String name, String age, String gender,Address address1 ) {
-		super();
+
+
+	public Customer(String name, String age, String gender,String housenumber, String colony ) {
+		super(housenumber,colony);
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
